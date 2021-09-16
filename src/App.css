@@ -1,38 +1,85 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+:root {
+  --bkg-color: #f8eeec;
+  --sub-color: #d50000;
+}
+html {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bkg-color);
+  font-family: "Ubuntu", sans-serif;
+  overflow: hidden;
+}
+.brand-name {
+  margin: 1rem auto;
+  padding: 2rem 5rem 1rem;
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  width: fit-content;
+  color: var(--sub-color);
+}
+.main-box {
+  display: block;
+  margin: auto;
+  padding: 1rem 0rem 0.5rem;
+  text-align: center;
+  max-width: 600px;
+}
+.name-input {
+  display: block;
+  margin: 0.8rem auto;
+  font-size: 1.5rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.date-input {
+  display: block;
+  margin: 0rem auto;
+  padding: 0.1rem;
+  font-size: 1.4rem;
+  border: 3px solid var(--sub-color);
+  border-radius: 10px;
+  outline: none;
+  width: 350px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.check {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  border: 3px solid var(--sub-color);
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.check:hover {
+  background-color: var(--sub-color);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.result-palindrome {
+  display: block;
+  margin: auto;
+  padding: 0rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  margin: auto;
+  padding: 0rem 1rem 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.link {
+  margin: auto;
+  padding: 0.8rem;
+  color: var(--sub-color);
+}
+.foot-button:hover {
+  transform: scale(1.3);
 }
